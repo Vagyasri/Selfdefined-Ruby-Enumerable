@@ -3,15 +3,9 @@ module Enumerable
     if block_given?
       to_a.length.times { |i| yield to_a[i] }
     else
-     to_enum  
-    end  
+      to_enum
+    end
   end
-# def my_each
-#     return enum_for unless block_given?
-#     for index in self
-#       yield index
-#     end
-#   end
 end
 
 # my_hash = {min: 2, max: 5}
